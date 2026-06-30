@@ -20,9 +20,9 @@ cover:"images/cover2.png"
 },
 
 {
-title:"Rainy Window",
-artist:"Night Owl",
-src:"music/song3.mp3",
+title:"MASKARA",
+artist:"Billy",
+src:"mysong.mp3",
 cover:"images/cover3.png"
 },
 
