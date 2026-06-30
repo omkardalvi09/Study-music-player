@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelBeat - Pixel Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="themeOverlay"></div>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <header>
+        <h1>🎮 PIXELBEAT</h1>
+        <p>Retro Pixel Music Player</p>
+        <p id="welcome">Welcome!</p>
+    </header>
+
+    <!-- BACKGROUND -->
+
+    <section class="background">
+
+        <div id="particles"></div>
+
+        <div id="rain"></div>
+
+        <div id="dayNight">
+            Night
+        </div>
+
+        <div class="moon"></div>
+
+        <div class="stars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="city"></div>
+
+    </section>
+
+    <!-- CHARACTER -->
+
+    <section class="character-section">
+
+        <div id="character">
+            (^_^)
+        </div>
+
+        <p id="status">
+            Idle
+        </p>
+
+        <div id="cat">
+            =^.^=
+        </div>
+
+    </section>
+
+    <!-- ALBUM -->
+
+    <section class="album">
+
+        <img id="cover"
+        src="images/cover1.jpg"
+        alt="Album Cover">
+
+        <div class="song-info">
+
+            <h2 id="title">
+                Pixel Dreams
+            </h2>
+
+            <h3 id="artist">
+                Lofi Studio
+            </h3>
+
+        </div>
+
+    </section>
+
+    <!-- EQUALIZER -->
+
+    <section class="equalizer">
+
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+
+    </section>
+
+    <p id="equalizerStatus">
+        Ready
+    </p>
+
+    <!-- PROGRESS -->
+
+    <section class="progress-container">
+
+        <span id="current">0:00</span>
+
+        <input
+        type="range"
+        id="progress"
+        value="0">
+
+        <span id="duration">0:00</span>
+
+    </section>
+
+    <!-- CONTROLS -->
+
+    <section class="controls">
+
+        <button id="prev">⏮</button>
+
+        <button id="play">▶</button>
+
+        <button id="pause">⏸</button>
+
+        <button id="next">⏭</button>
+
+    </section>
+
+    <!-- VOLUME -->
+
+    <section class="volume">
+
+        <label>🔊</label>
+
+        <input
+        type="range"
+        min="0"
+        max="100"
+        value="70"
+        id="volume">
+
+    </section>
+
+    <!-- PLAYLIST -->
+
+    <section class="playlist">
+
+        <h2>Playlist</h2>
+
+        <ul id="playlist">
+
+            <li data-index="0">🎵 Pixel Dreams</li>
+            <li data-index="1">🎵 Coffee Shop</li>
+            <li data-index="2">🎵 Rainy Window</li>
+            <li data-index="3">🎵 Night Walk</li>
+            <li data-index="4">🎵 Sunset Drive</li>
+
+        </ul>
+
+    </section>
+
+    <!-- THEME -->
+
+    <section class="theme">
+
+        <h2>Theme</h2>
+
+        <select id="themeSelect">
+
+            <option value="city">Night City</option>
+            <option value="forest">Forest</option>
+            <option value="beach">Beach</option>
+            <option value="space">Space</option>
+            <option value="rain">Rain Street</option>
+
+        </select>
+
+        <p id="themeName">
+            Night City
+        </p>
+
+    </section>
+
+    <!-- TIMER -->
+
+    <section class="timer">
+
+        <h2>Study Timer</h2>
+
+        <h3 id="clock">
+            25:00
+        </h3>
+
+        <button id="startTimer">
+            Start
+        </button>
+
+        <button id="resetTimer">
+            Reset
+        </button>
+
+        <p id="liveClock">
+            00:00:00
+        </p>
+
+    </section>
+
+    <!-- XP -->
+
+    <section class="xp">
+
+        <h2>XP</h2>
+
+        <p id="xpText">
+            ⭐ 0 XP
+        </p>
+
+        <div class="xpBar">
+            <div id="xpFill"></div>
+        </div>
+
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+
+    <section class="achievement">
+
+        <h2>Achievements</h2>
+
+        <p id="achievement">
+            No achievements yet.
+        </p>
+
+    </section>
+
+    <!-- DAILY REWARD -->
+
+    <section class="reward">
+
+        <h2>Daily Reward</h2>
+
+        <p id="reward">
+            Come back tomorrow!
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        PixelBeat © 2026
+
+    </footer>
+
+</div>
+
+<audio id="audio"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
