@@ -22,7 +22,7 @@ cover:"images/cover2.png"
 {
 title:"MASKARA",
 artist:"Billy",
-src:"mysong.mp3",
+src:"music/mysong.mp3",
 cover:"images/cover3.png"
 },
 
